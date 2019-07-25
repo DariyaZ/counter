@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap");
+body {
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  background-color: lemonchiffon; }
+
+.incrementButton, .decrementButton, .toggleButton {
+  padding: 15px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  border: none;
+  margin: 10px;
+  font-size: 24px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px; }
+
+#container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.messageHeading {
+  font-size: 36px;
+  margin: 10px;
+  text-transform: uppercase; }
+
+.incrementButton {
+  background-color: #ae562a;
+  width: 60px;
+  -webkit-box-shadow: 0 3px #683014;
+          box-shadow: 0 3px #683014; }
+
+.decrementButton {
+  background-color: #a77f30;
+  width: 60px;
+  -webkit-box-shadow: 0 3px #42310f;
+          box-shadow: 0 3px #42310f; }
+
+.toggleButton {
+  background-color: #839d42;
+  width: 100px;
+  -webkit-box-shadow: 0 3px #546626;
+          box-shadow: 0 3px #546626; }
+
+.toggleButton:hover,
+.incrementButton:hover,
+.decrementButton:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }

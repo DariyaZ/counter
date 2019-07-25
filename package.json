@@ -1,0 +1,25 @@
+{
+  "name": "counter_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./src -p 8080 -c-1",
+    "deploy": "bash ./config/deploy.sh"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "http-server": "^0.11.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}

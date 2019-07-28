@@ -37,7 +37,10 @@ class App extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { count: 0, isCounterShown: true};
+        this.state = { 
+            count: 0,
+            isCounterShown: true
+        };
 
         this.handleDecrementCount = this.handleDecrementCount.bind(this);
         this.handleIncrementCount = this.handleIncrementCount.bind(this);
@@ -45,15 +48,21 @@ class App extends React.Component {
     }
 
     handleDecrementCount() {
-        this.setState((prevState) => ({ count: prevState.count - 1 }));
+        this.setState((prevState) => ({
+            count: prevState.count - 1
+        }));
     }
 
     handleIncrementCount() {
-        this.setState((prevState) => ({ count: prevState.count + 1 }));
+        this.setState((prevState) => ({
+            count: prevState.count + 1
+        }));
     }
 
     handleToggleCounter() {
-        this.setState((prevState) => ({isCounterShown: !prevState.isCounterShown}))
+        this.setState((prevState) => ({
+            isCounterShown: !prevState.isCounterShown
+        }));
     }
 
     render () {
@@ -73,11 +82,12 @@ class App extends React.Component {
                                    ? 'HIDE' 
                                    : 'SHOW'} 
                                    onClick={this.handleToggleCounter} 
-                                   className='toggleButton'/>
+                                   className='toggleButton'
+                    />
                 </div>
                 {
                     (this.state.count >= 10)
-                    ? <Message src='images/its_ten.jpg' className='messageHeading'/>
+                    ? <Message src='images/its_ten.jpg' alt='ten_score' className='messageHeading'/>
                     : null
                 }
             </React.Fragment>
@@ -85,7 +95,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <App />,
-    document.querySelector('#container')
-)
+ReactDOM.render(<App />, document.querySelector('#container'));

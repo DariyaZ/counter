@@ -1,28 +1,21 @@
-class Counter extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render () {
-        return (
-            <h2>Count is {this.props.count}</h2>
-        );
-    }
+function Counter(props) {
+    return (
+        <h2>Count is {props.count}</h2>
+    );
 }
 
-class Button extends React.Component {
-    render () {
-        const { className, label } = this.props;
+function Button(props) {
+    const { className, label } = props;
 
-        return <button onClick={this.props.onClick} className={className}>
+    return (
+        <button onClick={props.onClick} className={className}>
             {label}
         </button>
-    }
+    )
 }
 
-class Message extends React.Component {
-    render () {
-        const { src, alt, className } = this.props;
+function Message(props) {
+        const { src, alt, className } = props;
 
         return (
             <React.Fragment>
@@ -30,7 +23,6 @@ class Message extends React.Component {
                 <img src={src} alt={alt} />
             </React.Fragment>
         )
-    }
 }
 
 class App extends React.Component {
